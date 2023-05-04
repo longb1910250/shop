@@ -73,7 +73,7 @@ class BrandProductController extends Controller
         $delete = Brand::find($id);
         $delete->delete();
         Session::flash('message', 'Xoá thương hiệu thành công');
-        return Redirect::to('all_category_product');
+        return Redirect::to('all_brand_product');
     }
 
     public function active_brand_product($id_brand_product)
